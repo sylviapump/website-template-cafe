@@ -1,0 +1,223 @@
+/* Color Theme: Holiday Cheer */
+
+/* Define custom color variables */
+:root {
+    --color-accent1: #C2C0A6; /* Light beige */
+    --color-accent3: #6A8C69; /* Olive green */
+    --color-accent4: #53736A; /* Dark green */
+    --color-accent5: #024554; /* Dark teal */
+    --color-white: #FFF; /* White */
+    --color-black: #000; /* Black */
+}
+
+/* Apply border-radius to the favicon */
+link[rel="icon"] {
+    border-radius: 50%;
+}
+
+/* Body styles */
+body {
+    opacity: 1; /* Start with full opacity */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect for opacity */
+    font-family: Nunito, Verdana, sans-serif; /* Set font family */
+    background-color: rgba(194, 192, 166, 0.2); /* Light beige background color (color-accent1) */
+}
+
+/* Fade out effect when the body has the class 'is-loading' */
+body.is-loading {
+    opacity: 0; /* Reduce opacity to 0 during loading */
+}
+
+/* Links styles */
+
+/* Base link styles */
+a {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Hover, active, and focus states */
+a:hover,
+a:active,
+a:focus {
+    color: var(--color-accent1) !important; /* Set link color to color-accent1 on hover, active, and focus states */
+}
+
+
+/* Buttons styles */
+
+/* Base button styles */
+.btn {
+    background-color: var(--color-accent5); /* Set background color to color-accent5 */
+    color: var(--color-white); /* Set text color to white */
+    outline: none; /* Remove outline when focused */
+    border: none; /* Remove border */
+}
+
+/* Hover, active, and focus states for buttons */
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: var(--color-accent1); /* Change background color to color-accent1 on hover, active, and focus */
+    color: var(--color-black) !important; /* Set text color to black (important to override other styles) */
+    border: none !important; /* Remove any border (important to override Bootstrap defaults) */
+    outline: none !important; /* Remove outline (important to override Bootstrap defaults) */
+    box-shadow: none !important; /* Remove box shadow (important to override Bootstrap defaults) */
+}
+
+/* Links and buttons focus styles when using TAB key */
+
+/* Focus styles for links */
+a:focus-visible {
+    outline: none !important; /* Remove outline (important to override Bootstrap defaults) */
+    box-shadow: 0 0 0 0.125rem rgba(194, 192, 166, 0.5) !important; /* Apply focus shadow with color-accent1 */
+    border-radius: 5px; /* Apply border radius */
+}
+
+/* Focus styles for buttons */
+.btn:focus-visible {
+    outline: none !important; /* Remove outline (important to override Bootstrap defaults) */
+    box-shadow: 0 0 0 0.125rem rgba(194, 192, 166, 0.5) !important; /* Apply focus shadow with color-accent1 */
+    border-radius: 5px; /* Apply border radius */
+}
+
+
+/* HEADER */
+header {
+    background-color: var(--color-accent4) !important;
+}
+
+/* Navbar brand and links */
+.navbar-brand, .nav-link {
+    color: var(--color-white) !important;
+}
+
+/* Remove border, outline, and box shadow from navbar toggler */
+.navbar-toggler {
+    border: none !important; /* Remove border */
+    outline: none !important; /* Remove outline */
+    box-shadow: none !important; /* Remove box shadow */
+}
+
+/* Change color of close (cross) icon on navbar toggler */
+.fa.fa-times {
+    color: var(--color-white); /* Change color of the close icon */
+}
+
+/* Underline menu link on specific pages */
+.menu-page .navbar-nav .menu-page,
+.about-page .navbar-nav .about-page,
+.gallery-page .navbar-nav .gallery-page,
+.contact-page .navbar-nav .contact-page {
+    text-decoration: underline; /* Underline menu link on corresponding page */
+}
+
+
+/* MAIN BODY */
+
+/* Jumbotron styles */
+
+/* Ensure relative positioning for absolute child elements */
+.jumbotron {
+    position: relative;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+/* Styles for the content inside the Jumbotron */
+.jumbotron-content {
+    position: relative; /* Maintain relative positioning */
+    z-index: 1; /* Ensure content appears above the overlay */
+    min-height: 85vh; /* Minimum height for the Jumbotron */
+}
+
+/* Heading color inside the Jumbotron */
+.jumbotron-heading {
+    color: var(--color-white); /* White color for the heading */
+}
+
+/* Overlay to enhance readability of text */
+.jumbotron::before {
+    content: ""; /* Create a pseudo-element for overlay */
+    position: absolute; /* Positioning relative to the parent */
+    top: 0; /* Align to the top of the parent */
+    left: 0; /* Align to the left of the parent */
+    width: 100%; /* Cover the entire width of the parent */
+    height: 100%; /* Cover the entire height of the parent */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    z-index: 0; /* Ensure the overlay is behind the content */
+}
+
+
+/* Custom Line Style */
+
+/* Dashed line with specific color and opacity */
+.line {
+    border-top: 2px dashed rgba(106, 140, 105, 0.2); /* Dashed line with color accent-1 and opacity */
+    width: 90%; /* Width of the line */
+    margin: 0 auto; /* Center the line horizontally */
+}
+
+/* Menu styles */
+
+/* Ensure the table takes up 100% of its container width */
+.menu-table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders between table cells */
+}
+
+/* Styling for table header and data cells */
+.menu-table th, .menu-table td {
+    padding: 10px; /* Padding around table cells */
+    vertical-align: top; /* Align content to the top */
+    border: none; /* Remove borders from table cells */
+}
+
+/* Right-align prices and prevent wrapping */
+.menu-table .price {
+    text-align: right; /* Align text to the right */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Gallery styles */
+
+/* Container for collage items using flexbox */
+.collage-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to next line when needed */
+}
+
+/* Styling for each item in the collage */
+.collage-item {
+    padding: 5px; /* Padding around each item */
+    flex: 1 0 33.33%; /* Each item takes up one-third of the container */
+}
+
+/* Ensure images within collage items fill their container */
+.collage-item img {
+    width: 100%; /* Full width of parent container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Margin around each image */
+}
+
+/* Center collage items on smaller screens (phones) */
+@media (max-width: 767px) {
+    .collage-container {
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .collage-item {
+        flex: 1 0 100%; /* Each item takes full width */
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-accent4); /* Background color using custom variable */
+    color: var(--color-white); /* Text color using custom variable */
+}
+
+
+
+
+

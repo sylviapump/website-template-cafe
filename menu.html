@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Website icon -->
+    <link rel="icon" href="resources/images/icon.png" type="image/x-icon" />
+
+    <!-- Preloads -->
+    <link rel="preload" href="resources/images/daan-evers-tKN1WXrzQ3s-unsplash.jpg" as="image">
+    <link rel="preload" href="resources/styles.css" as="style">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="resources/styles.css">
+
+    <title>Template Café</title>
+</head>
+
+<body class="menu-page">
+
+    <!-- Header -->
+    <header class="sticky-top"> <!-- Sticky header to remain fixed on scroll -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-md w-100">
+            <!-- Dark navbar that expands on medium screens and wider -->
+            <div class="container-fluid">
+
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="resources/images/logo.png" alt="Template Café Logo" width="220" height="110"
+                        class="d-inline-block"> <!-- Link to homepage with logo -->
+                </a>
+
+                <!-- Navbar Toggler Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!-- Icon for mobile menu toggle -->
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+                    <ul class="navbar-nav text-center py-md-0 py-5">
+                        <!-- List of navbar links, centered on medium screens and wider -->
+                        <!-- Menu Link -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-page" href="menu.html">Menu</a>
+                        </li>
+                        <!-- About Link -->
+                        <li class="nav-item">
+                            <a class="nav-link about-page" href="about.html">About</a>
+                        </li>
+                        <!-- Gallery Link -->
+                        <li class="nav-item">
+                            <a class="nav-link gallery-page" href="gallery.html">Gallery</a>
+                        </li>
+                        <!-- Contact Link -->
+                        <li class="nav-item">
+                            <a class="nav-link contact-page" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Social Media Icons -->
+                        <li class="nav-item d-flex justify-content-center"> <!-- Centered social media icons -->
+                            <!-- Facebook Link -->
+                            <a class="nav-link d-inline" href="https://facebook.com" target="_blank"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook-f px-md-0 px-2"></i> <!-- Facebook icon -->
+                            </a>
+                            <!-- Instagram Link -->
+                            <a class="nav-link d-inline" href="https://instagram.com" target="_blank"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram px-md-0 px-2"></i> <!-- Instagram icon -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="container py-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-4 fw-bold">Menu</h1>
+                </div>
+            </div>
+
+            <!-- Breakfast Menu -->
+            <div class="row py-5">
+                <div class="col-12 text-center mt-5">
+                    <div class="line mb-5"></div>
+                    <h2 class="fw-bold">All-Day Breakfast</h2>
+                </div>
+            </div>
+
+            <table class="menu-table">
+                <tr>
+                    <td>
+                        <span class="fw-bold">English Breakfast</span><br>
+                        <span>Fried or scrambled eggs, bacon, sausages, baked beans, tomatoes, mushrooms &amp; hash
+                            browns served with sourdough toast (GFO)
+                        </span>
+                    </td>
+                    <td class="price">$28.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Eggs Florentine</span><br>
+                        <span>Poached eggs &amp; spinach served with hollandaise on sourdough toast (GFO,
+                            VEG)</span>
+                    </td>
+                    <td class="price">$22.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Eggs Benedict</span><br>
+                        <span>Poached eggs &amp; bacon served with hollandaise on sourdough toast (GFO)</span>
+                    </td>
+                    <td class="price">$24.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Eggs and Smoked Salmon</span><br>
+                        <span>Poached eggs, spinach &amp; smoked salmon served with hollandaise on sourdough
+                            toast (GFO)</span>
+                    </td>
+                    <td class="price">$26.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Smashed Avocado on Toast</span><br>
+                        <span>with feta, tomato &amp; rocket on sourdough toast (GFO, VEG, VO)</span>
+                    </td>
+                    <td class="price">$22.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Mushrooms on Toast</span><br>
+                        <span>with feta &amp; herbs on sourdough toast (GFO, VEG, VO)</span>
+                    </td>
+                    <td class="price">$21.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">French Toast</span><br>
+                        <span>Topped with strawberries &amp; maple syrup on sourdough (GFO, VEG, VO)</span>
+                    </td>
+                    <td class="price">$21.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Pancake Stack</span><br>
+                        <span>Topped with strawberries &amp; maple syrup served with vanilla ice-cream (GFO, VEG,
+                            VO)</span>
+                    </td>
+                    <td class="price">$21.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Berry Bircher</span><br>
+                        <span>Rolled oats soaked overnight in milk and apple juice, served with crushed nuts and
+                            berries (GFO, VEG)</span>
+                    </td>
+                    <td class="price">$16.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">House Made Granola</span><br>
+                        <span>Toasted nuts, rolled oats, yoghurt &amp; honey with seasonal fruits (GFO, VEG)</span>
+                    </td>
+                    <td class="price">$15.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Fruit Toast</span><br>
+                        <span>Served with butter (VEG, VO)</span>
+                    </td>
+                    <td class="price">$9.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Sourdough Toast</span><br>
+                        <span>Served with butter and your choice of jam, peanut butter, or vegemite (GFO, VEG,
+                            VO)</span>
+                    </td>
+                    <td class="price">$9.50</td>
+                </tr>
+            </table>
+
+            <!-- Breakfast Sides -->
+            <div class="row py-5">
+                <div class="col-12 text-center">
+                    <h3 class="fw-bold">Sides</h3>
+                </div>
+            </div>
+
+            <table class="menu-table">
+                <tr>
+                    <td>
+                        <span class="fw-bold">Smoked salmon</span><br>
+                    </td>
+                    <td class="price">$6.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Bacon</span><br>
+                    </td>
+                    <td class="price">$5.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Halloumi, avocado</span><br>
+                    </td>
+                    <td class="price">$4.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Egg (poached, scrambled or fried)</span><br>
+                    </td>
+                    <td class="price">$3.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Sourdough, gf bread</span><br>
+                    </td>
+                    <td class="price">$3.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Tomato, mushrooms, spinach, hollandaise, relish</span><br>
+                    </td>
+                    <td class="price">$2.50</td>
+                </tr>
+            </table>
+
+
+            <!-- Lunch Menu -->
+            <div class="row py-5">
+                <div class="col-12 text-center mt-5">
+                    <div class="line mb-5"></div>
+                    <h2 class="fw-bold">Lunch</h2>
+                    <p>From 11:30am</p>
+                </div>
+            </div>
+
+            <table class="menu-table">
+                <tr>
+                    <td>
+                        <span class="fw-bold">Soup of the Day</span><br>
+                        <span>served with sourdough bread (GFO, VEG, VO)
+                        </span>
+                    </td>
+                    <td class="price">$16.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Template salad</span><br>
+                        <span>Mesclun, feta, pumpkin seeds, cherry tomatoes, cucumber,
+                            capsicum, carrot and vinaigrette dressing (GFO, VEG, VO)
+                        </span>
+                    </td>
+                    <td class="price">$18.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">+ chicken</span><br>
+                    </td>
+                    <td class="price">$5.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">+ smoked salmon/span><br>
+                    </td>
+                    <td class="price">$6.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">BLT</span><br>
+                        <span>Bacon, lettuce, tomato, aioli, sourdough served with chips (GFO)
+                        </span>
+                    </td>
+                    <td class="price">$20.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Mussel Spaghetti</span><br>
+                        <span>with chilli, garlic, basil, parmesan & olive oil
+                        </span>
+                    </td>
+                    <td class="price">$24.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Beef burger</span><br>
+                        <span>Beef patty, American cheese, caramelised onion, lettuce, tomato, burger
+                            sauce, toasted brioche bun served with chips (GFO)
+                        </span>
+                    </td>
+                    <td class="price">$26.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Swiss mushroom burger</span><br>
+                        <span>Grilled mushroom, fried halloumi, crispy slaw,
+                            truffle aioli, brioche bun served with chips (GFO, VEG, VO)
+                        </span>
+                    </td>
+                    <td class="price">$22.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Beer battered fish</span><br>
+                        <span>Served with chips, salad and house-made tartar sauce
+                        </span>
+                    </td>
+                    <td class="price">$26.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Nachoes</span><br>
+                        <span>Guacamole, sour cream, house made tomato salsa, and cheese served with
+                            tortilla chips (GFO, VEG, VO)
+                        </span>
+                    </td>
+                    <td class="price">$20.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">+ shredded beef</span><br>
+                    </td>
+                    <td class="price">$5.00</td>
+                </tr>
+            </table>
+
+            <!-- Lunch Sides -->
+            <div class="row py-5">
+                <div class="col-12 text-center">
+                    <h3 class="fw-bold">Sides</h3>
+                </div>
+            </div>
+
+            <table class="menu-table">
+                <tr>
+                    <td>
+                        <span class="fw-bold">Chips</span><br>
+                    </td>
+                    <td class="price">$6.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Sweet potato chips</span><br>
+                    </td>
+                    <td class="price">$7.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Garden salad</span><br>
+                    </td>
+                    <td class="price">$7.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Aioli</span><br>
+                    </td>
+                    <td class="price">$2.00</td>
+                </tr>
+            </table>
+
+            <!-- Drinks Menu -->
+            <div class="row py-5">
+                <div class="col-12 text-center pt-5">
+                    <div class="line mb-5"></div>
+                    <h2 class="fw-bold">Drinks</h2>
+                </div>
+            </div>
+
+            <table class="menu-table">
+                <tr>
+                    <td>
+                        <span class="fw-bold">
+                            <h4>Hot Beverages</h4>
+                        </span>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Coffee</span><br>
+                        <span>Cappuccino, latte, flat white, chai latte, macchiato,
+                            long black, espresso, mocha, dirty chai, piccolo
+                        </span>
+                    </td>
+                    <td class="price">cup $5.00 | mug $6.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Hot Chocolate</span><br>
+                        <span>Hot chocolate, white hot chocolate,
+                            dark hot chocolate, mint hot chocolate
+                        </span>
+                    </td>
+                    <td class="price">cup $5.00 | mug $6.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Tea</span><br>
+                        <span>English Breakfast, earl grey, chai, green, peppermint,
+                            camomile,lemon and ginger
+                        </span>
+                    </td>
+                    <td class="price">$5.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Extras</span><br>
+                        <span>Almond milk, oat milk, soy milk, lactose-free milk,
+                            extra shot, decaf, honey
+                        </span>
+                    </td>
+                    <td class="price">50c</td>
+                </tr>
+            </table>
+
+            <table class="menu-table mt-5">
+                <tr>
+                    <td>
+                        <span class="fw-bold">
+                            <h4>Cold Drinks</h4>
+                        </span>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Iced coffee, iced mocha or iced chocolate</span><br>
+                    </td>
+                    <td class="price">$8.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Smoothies</span>
+                    </td>
+                    <td class="price">$9.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Mixed Berry</span><br>
+                        <span>Frozen yoghurt, mixed berries, honey and milk</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Banana</span><br>
+                        <span>Frozen yoghurt, banana, honey and milk</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Super Green</span><br>
+                        <span>Spinach, celery, cucumber, banana, lemon, pineapple, ginger, ice and water</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Milkshakes</span><br>
+                        <span>Strawberry, chocolate, vanilla, caramel, lime, peppermint,
+                            blue haven, banana, pineapple
+                        </span>
+                    </td>
+                    <td class="price">small $6.00 | large $7.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="fw-bold">Soft Drinks</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Coke, diet coke, lemonade, raspberry lemonade, fanta, solo
+                        </span>
+                    </td>
+                    <td class="price">$4.50</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Lemon lime bitters, ginger beer
+                        </span>
+                    </td>
+                    <td class="price">$5.00</td>
+                </tr>
+            </table>
+
+            <!-- Cakes -->
+            <div class="row py-5">
+                <div class="col-12 text-center pt-5">
+                    <div class="line mb-5"></div>
+                    <h2 class="fw-bold">Cakes</h2>
+                    <p class="mt-4">We offer a selection of cakes, slices, and muffins
+                        baked daily, perfect to enjoy with a coffee.</p>
+                </div>
+            </div>
+
+            <!-- Dietry Requirements -->
+            <div class="row py-5">
+                <div class="col-12 text-center pt-5">
+                    <div class="line mb-5"></div>
+                    <p class="mt-5">Please advise of any allergies or dietry requirements prior to
+                        ordering.</p>
+                    <p>Eggs are free range, laid by pasture raised chickens.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+         <!-- Footer -->
+    <footer>
+        <section class="container-fluid px-5"> <!-- Container for footer content with padding -->
+            <div class="row">
+                <!-- Logo Section -->
+                <div
+                    class="col-lg-3 col-md-4 d-flex justify-content-md-start justify-content-center text-md-start text-center py-5">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="resources/images/logo.png" alt="Template Café Logo" width="220" height="110"
+                            class="d-inline-block logo"> <!-- Logo image -->
+                    </a>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-4 d-flex justify-content-md-start justify-content-center py-5">
+                    <ul class="list-unstyled text-md-end text-center m-0 p-0">
+                        <li>123 Main Street</li> <!-- Address -->
+                        <li>Launceston TAS 7250</li> <!-- City and State -->
+                        <li>(03) 6300 1234</li> <!-- Phone number -->
+                    </ul>
+                </div>
+                <!-- Opening Hours -->
+                <div
+                    class="col-lg-3 col-md-4 d-flex justify-content-md-start justify-content-center text-md-start text-center py-5">
+                    <ul class="list-unstyled text-md-end text-center m-0 p-0">
+                        <li><strong>OPENING HOURS</strong></li> <!-- Heading for opening hours -->
+                        <li>8:00am - 2:30pm Wednesday - Sunday</li> <!-- Opening hours -->
+                        <li>Closed Mondays and Tuesdays</li> <!-- Closed days -->
+                    </ul>
+                </div>
+                <!-- Social Media Icons  -->
+                <div class="col-lg-3 d-flex justify-content-lg-end justify-content-center text-lg-end text-center py-5">
+                    <div class="d-flex justify-content-md-end justify-content-center">
+                        <a class="nav-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f p-2"></i> <!-- Facebook icon -->
+                        </a>
+                        <a class="nav-link ms-3" href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram p-2"></i> <!-- Instagram icon -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright and Credits -->
+        <section class="text-center small p-2">
+            <p>&copy; 2024 Template Café. Website by <a href="https://www.newsteadwebdesigns.com.au"
+                    target="_blank">Newstead Web Designs</a></p> <!-- Copyright text with link to web designer -->
+        </section>
+    </footer>
+
+
+    <!-- JavaScript; Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Function to close navbar when link is clicked
+        function closeNavbar() {
+            var navToggler = document.querySelector('.navbar-toggler');
+            var navCollapse = document.querySelector('.navbar-collapse');
+            var icon = navToggler.querySelector('span');
+
+            if (navCollapse.classList.contains('show')) {
+                navCollapse.classList.remove('show');
+                // Change the toggle icon back to the default state
+                if (icon.classList.contains('fa-times')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('navbar-toggler-icon');
+                }
+            }
+        }
+
+        // Toggle navbar icon between default and 'X' icon
+        var navbarToggler = document.querySelector('.navbar-toggler');
+
+        navbarToggler.addEventListener('click', function () {
+            var icon = navbarToggler.querySelector('span');
+            if (icon.classList.contains('navbar-toggler-icon')) {
+                icon.classList.remove('navbar-toggler-icon');
+                icon.classList.add('fa', 'fa-times');
+            } else {
+                icon.classList.remove('fa', 'fa-times');
+                icon.classList.add('navbar-toggler-icon');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
